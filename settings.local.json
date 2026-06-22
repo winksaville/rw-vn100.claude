@@ -15,7 +15,15 @@
       "Bash(command -v pdftotext)",
       "Bash(pdftotext -layout VN100-ICD-v3_1_0_0-ICD10005-R1.pdf /tmp/vn100-icd.txt)",
       "Read(//tmp/**)",
-      "Bash(grep -nA6 -iE \"^2\\\\.4\\\\.[0-9]+ +\\(UncompAccel|UncompGyro|UncompMag|Mag$|Temperature|Pressure\\)\" /tmp/vn100-icd.txt)"
+      "Bash(grep -nA6 -iE \"^2\\\\.4\\\\.[0-9]+ +\\(UncompAccel|UncompGyro|UncompMag|Mag$|Temperature|Pressure\\)\" /tmp/vn100-icd.txt)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(jj st *)",
+      "Bash(jj log *)",
+      "Bash(command -v vc-x1)",
+      "Bash(vc-x1 -V)",
+      "Bash(rdwr_vn100 *)",
+      "WebSearch",
+      "Bash(jj bookmark *)"
     ]
   }
 }
