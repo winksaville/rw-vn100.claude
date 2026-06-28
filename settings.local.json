@@ -61,7 +61,15 @@
       "Bash(rw-vn100 set-bin-fields=time,accel,gyro *)",
       "Bash(rw-vn100 set-bin=on *)",
       "Bash(rw-vn100 set-bin=off *)",
-      "Bash(rw-vn100 set-bin-hz=200 *)"
+      "Bash(rw-vn100 set-bin-hz=200 *)",
+      "Bash(rw-vn100 bench *)",
+      "Bash(xxd ./tmp/capture.bin)",
+      "Bash(rw-vn100 baud *)",
+      "Bash(rw-vn100 set-bin-fields=time,ypr,quat,gyro,accel,imu,magpres *)",
+      "Bash(rw-vn100 set-ascii=ymr *)",
+      "Bash(awk '{print $5, $9}')",
+      "Bash(bash test-data/zero-parse/repro.sh ./tmp 20)",
+      "Bash(grep -vE \"^Opening|^TX:|^RX:|acknowledged|^Verifying|^Verified|Volatile|^\\\\\\(|preset set|Binary output:|^rw-vn100 0|Measuring|^$|Sample:|Fields:\")"
     ]
   }
 }
