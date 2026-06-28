@@ -56,7 +56,10 @@
       "Bash(sed -n '/get-bin/,/^  baud/p')",
       "Bash(rw-vn100 set-bin *)",
       "Bash(rw-vn100 set-bin=time,accel)",
-      "Bash(rw-vn100 set-bin-fields *)"
+      "Bash(rw-vn100 set-bin-fields *)",
+      "Bash(rw-vn100 set-ascii=off *)",
+      "Bash(rw-vn100 set-bin-fields=time,accel,gyro *)",
+      "Bash(rw-vn100 set-bin=on *)"
     ]
   }
 }
