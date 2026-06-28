@@ -70,7 +70,14 @@
       "Bash(awk '{print $5, $9}')",
       "Bash(bash test-data/zero-parse/repro.sh ./tmp 20)",
       "Bash(grep -vE \"^Opening|^TX:|^RX:|acknowledged|^Verifying|^Verified|Volatile|^\\\\\\(|preset set|Binary output:|^rw-vn100 0|Measuring|^$|Sample:|Fields:\")",
-      "Bash(cd *)"
+      "Bash(cd *)",
+      "Bash(python3 *)",
+      "Bash(git -C . show 06a188b --stat --format='%s%n%n%b')",
+      "Bash(pdftotext -layout /home/nps-gnc/data/prgs/nps-gnc/docs/VN100-T_UserManual-UM001.pdf -)",
+      "Bash(pdftotext *)",
+      "Bash(rw-vn100 -V)",
+      "Bash(rw-vn100 rrg *)",
+      "Bash(rw-vn100 wrg *)"
     ]
   }
 }
