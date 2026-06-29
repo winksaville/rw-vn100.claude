@@ -77,7 +77,18 @@
       "Bash(pdftotext *)",
       "Bash(rw-vn100 -V)",
       "Bash(rw-vn100 rrg *)",
-      "Bash(rw-vn100 wrg *)"
+      "Bash(rw-vn100 wrg *)",
+      "Bash(bash test-data/zero-parse/repro.sh /home/nps-gnc/data/prgs/nps-gnc/rw-vn100/test-data/zero-parse/timing-run-2 20 921600)",
+      "Bash(bash /tmp/claude-1000/-home-nps-gnc-data-prgs-nps-gnc-rw-vn100/2670822f-bdfe-4486-ab46-5074ca138341/scratchpad/repro-compose.sh)",
+      "Bash(bash /home/nps-gnc/data/prgs/nps-gnc/rw-vn100/scripts/repro-bw.sh mixed-bin200-ascii200 200 200 40)",
+      "Bash(bash scripts/repro-bw.sh binonly-400 400 0 10)",
+      "Bash(bash scripts/repro-bw.sh binonly-800 800 0 10)",
+      "Bash(vc-x1 validate-todo *)",
+      "Bash(set -e)",
+      "Bash(mv mixed-bin200-ascii200/cap-r3-*.bin        mixed-50pct/fail.bin)",
+      "Bash(mv mixed-bin200-ascii200/cap-r3-*.bin.timing mixed-50pct/fail.bin.timing)",
+      "Bash(mv mixed-bin200-ascii200/cap-r4-*.bin        mixed-50pct/clean.bin)",
+      "Bash(mv mixed-bin200-ascii200/cap-r4-*.bin.timing mixed-50pct/clean.bin.timing)"
     ]
   }
 }
